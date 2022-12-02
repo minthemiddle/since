@@ -15,7 +15,7 @@
                         @endforeach
                     </ul>
                 </div>
-        <div class="p-4 sm:p-6 lg:p-8">
+        <div class="p-6">
         <form method="POST" action="{{ route('entries.store') }}">
             @csrf
             <input type="text" name="title" value="{{ old('title') }}">
