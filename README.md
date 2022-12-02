@@ -15,6 +15,14 @@ It can be used for questions as the following:
 - You can enter a new occurance of an entry
 - You can see how often you did a specific thing
 
+## Roadmap
+
+The following features are planned, but I will do it on my own schedule and will not give any estimation.
+
+- You can edit an entry
+- You can delete an entry
+- You can add a comment to an entry
+
 ## Limitations
 
 These are the limitations of "Since". "Since" is intended to be simple software and I'm not planning to remove these limitations. 
