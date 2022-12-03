@@ -11,7 +11,7 @@
                 <div class="p-6 text-gray-900">
                     <ul class="list-disc">
                         @foreach($entries as $entry)
-                            <li><strong>{{ $entry->title }}</strong>, {{ $entry->updated_at->diffForHumans() }} ({{ $entry->count }}x), @if ($entry->user->is(auth()->user()))<form method="POST" class="inline" action="{{ route('entries.update', $entry) }}"> @csrf @method('patch')<input type="submit" value="Update" class="underline"><input type="hidden" name="title" value="{{ $entry->title }}"></form> @endif</li>
+                            <li><strong>{{ $entry->title }}</strong>, <span title="{{ $entry->updated_at->format('d.m.y H:i') }}"> {{ $entry->updated_at->diffForHumans() }}</span> ({{ $entry->count }}x), @if ($entry->user->is(auth()->user()))<form method="POST" class="inline" action="{{ route('entries.update', $entry) }}"> @csrf @method('patch')<input type="submit" value="Update" class="underline"><input type="hidden" name="title" value="{{ $entry->title }}"></form> @endif</li>
                         @endforeach
                     </ul>
                 </div>
