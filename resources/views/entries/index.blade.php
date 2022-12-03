@@ -28,7 +28,7 @@
                                     @if ($entry->user->is(auth()->user()))
                                     <form method="POST" class="inline" action="{{ route('entries.update', $entry) }}">
                                         @csrf @method('patch')
-                                        <input type="submit" value="Update" class="underline" />
+                                        <button type="submit" title="Update">⏳</button>
                                         <input type="hidden" name="title" value="{{ $entry->title }}"/>
                                     </form>
                                     @endif
