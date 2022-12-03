@@ -27,7 +27,7 @@ class EntryController extends Controller
      */
     public function create()
     {
-        return route('entries.create');
+        return view('entries.create');
     }
 
     /**

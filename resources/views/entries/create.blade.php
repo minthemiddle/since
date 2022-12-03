@@ -1,10 +1,22 @@
 <x-app-layout>
-    <div class="max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
-        <form method="POST" action="{{ route('entries.store') }}">
-            @csrf
-            <input type="text" name="title" value="{{ old('title') }}">
-            <x-input-error :messages="$errors->get('message')" class="mt-2" />
-            <x-primary-button class="mt-4">{{ __('Chirp') }}</x-primary-button>
-        </form>
-    </div>
+    <form method="POST" action="{{ route('entries.store') }}">
+        @csrf
+        <div>
+            <label>
+                <h2 class="italic">Title</h2>
+                <input class="w-64" type="text" name="title" value="{{ old('title') }}" />
+                <x-input-error :messages="$errors->get('title')" class="mt-2" />
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <h2 class="italic">Comment</h2>
+                <textarea class="w-full" name="comment">{{ old('comment') }}</textarea>
+                <x-input-error :messages="$errors->get('comment')" class="mt-2" />
+            </label>
+        </div>
+                    
+        <x-primary-button class="mt-4">{{ __('Save') }}</x-primary-button>
+    </form>
 </x-app-layout>
