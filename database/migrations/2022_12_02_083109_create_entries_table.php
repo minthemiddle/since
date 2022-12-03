@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->text('title');
+            $table->text('comment')->nullable();
             $table->integer('count')->default(1);
             $table->timestamps();
         });

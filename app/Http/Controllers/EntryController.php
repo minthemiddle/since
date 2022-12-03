@@ -39,7 +39,8 @@ class EntryController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'title' => 'required|string|max:255',
+            'title' => 'required|string|max:25',
+            'comment' => 'nullable|string',
         ]);
         
         $request->user()->entries()->create($validated);

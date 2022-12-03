@@ -13,6 +13,7 @@ class Entry extends Model
     protected $fillable = [
         'title',
         'count',
+        'comment',
     ];
     
     public function user()
