@@ -9,15 +9,18 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
             <!-- Page Content -->
-            <main>
-                {{ $slot }}
+            <main class="p-2 md:p-4 lg:p-8">
+                <div class="max-w-7xl mx-auto bg-white overflow-hidden shadow-sm sm:rounded-lg text-gray-900 p-4">
+                    {{ $slot }}
+                </div>
             </main>
-        </div>
+        </div> 
     </body>
 </html>
