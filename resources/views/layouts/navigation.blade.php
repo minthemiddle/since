@@ -73,6 +73,9 @@
             <x-responsive-nav-link :href="route('entries.index')" :active="request()->routeIs('entries.index')">
                 {{ __('Entries') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('entries.create')" :active="request()->routeIs('entries.create')">
+                {{ __('New') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
