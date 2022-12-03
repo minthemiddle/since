@@ -2,7 +2,7 @@
     <table class="">
         <thead>
             <tr>
-                <th class="text-xs text-left font-normal italic">Title</th>
+                <th class="xs:pl-1 pl-2 text-xs text-left font-normal italic">Title</th>
                 <th class="text-xs text-center font-normal italic">Last</th>
                 <th class="text-xs text-center font-normal italic">#</th>
                 <th></th>
