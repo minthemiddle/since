@@ -99,6 +99,10 @@ class EntryController extends Controller
      */
     public function destroy(Entry $entry)
     {
-        //
+        $this->authorize('delete', $entry);
+        
+        $entry->delete();
+        
+        return redirect(route('entries.index'));
     }
 }

@@ -65,7 +65,7 @@ class EntryPolicy
      */
     public function delete(User $user, Entry $entry)
     {
-        return $entry->user()->is($user);
+        return $this->update($user, $entry);
     }
 
     /**
