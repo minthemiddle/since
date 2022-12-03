@@ -2,9 +2,9 @@
     <table class="">
         <thead>
             <tr>
-                <th class="text-left font-normal italic">Title</th>
-                <th class="text-left font-normal italic">Last Update</th>
-                <th class="text-center font-normal italic">#</th>
+                <th class="text-xs text-left font-normal italic">Title</th>
+                <th class="text-xs text-center font-normal italic">Last</th>
+                <th class="text-xs text-center font-normal italic">#</th>
                 <th></th>
             </tr>
         </thead>
