@@ -86,13 +86,14 @@ class EntryController extends Controller
 
         $validated = $request->validate([
             'title' => 'required|string|max:255',
+            'comment' => 'nullable|string',
         ]);
 
         $entry->update($validated, [
             'count' => $entry->count++,
         ]);
 
-        return redirect(route('entries.index'));
+        return redirect(route('entries.show', $entry));
     }
 
     /**
