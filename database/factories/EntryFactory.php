@@ -21,7 +21,7 @@ class EntryFactory extends Factory
         return [
             'title' => fake()->word(),
             'comment' => fake()->sentences(1, true),
-            'due' => fake()->randomNumber(3),
+            // 'due' => fake()->randomNumber(3),
             'user_id' => User::find(1),
         ];
     }

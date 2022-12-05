@@ -26,13 +26,13 @@ class DatabaseSeeder extends Seeder
         Entry::factory()->create([
             'title' => '🧠 Did brain jogging',
             'comment' => 'Doing a puzzle for it',
-            'due' => 3*30*24*60, // 3 months, 30 days, 24 hours, 60 minutes
+            // 'due' => 3*30*24*60, // 3 months, 30 days, 24 hours, 60 minutes
         ]);
         
         Entry::factory()->create([
             'title' => '🧃 Drank juice',
             'comment' => 'Quite a bit actually…',
-            'due' => 21*24*60, // 21 days, 24 hours, 60 minutes
+            // 'due' => 21*24*60, // 21 days, 24 hours, 60 minutes
         ]);
     }
 }
